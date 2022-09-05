@@ -1,0 +1,1 @@
+puts ((rand(10)==5) ? "rebro" : (puts ((rand(2)==1) ? "eagle" : "reshka")))
