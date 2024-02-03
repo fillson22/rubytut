@@ -10,17 +10,14 @@
 
 car_arr = [ 'Lada', 'Toyota', 'Geep', 'BMV', 'Mersedes', 'Audi', 'Kamaz' ]
 
-puts 'Hello, we have 7 car for you. Make you choice(number)'
+loop do
+  puts 'Hello, we have 7 car for you. Make you choice(number)'
+  choice_num = gets.to_i
 
-choice_num = gets.to_i
-
-if choice_num>=1 && choice_num<=7
-  puts "Your choice is #{car_arr[choice_num]}"
-else
-    puts 'Write correct number 1..7'
+  if choice_num>=1 && choice_num<=7
+    puts "Your choice is #{car_arr[choice_num-1]}"
+    break
+  else
+      puts 'Write correct number 1..7'
+  end
 end
-# car_arr.each do |car_num|
-#     if car_num.index==choice_num
-#         puts "Your choice is #{car_arr(choice_num)}"
-#     end
-# end
